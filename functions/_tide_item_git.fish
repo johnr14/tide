@@ -64,9 +64,9 @@ function _tide_item_git
     _tide_print_item git $_tide_location_color$tide_git_icon' ' (set_color white; echo -ns $location
         set_color $tide_git_color_operation; echo -ns ' '$operation ' '$step/$total_steps
         set_color $tide_git_color_upstream; echo -ns $tide_git_icon_upstream_behind$behind tide_git_icon_upstream_ahead$ahead
-        set_color $tide_git_color_stash; echo -ns $tide_git_icon_stash$stash
-        set_color $tide_git_color_conflicted; echo -ns $tide_git_icon_conflicted$conflicted
-        set_color $tide_git_color_staged; echo -ns $tide_git_icon_staged$staged
-        set_color $tide_git_color_dirty; echo -ns $tide_git_icon_dirty$dirty
-        set_color $tide_git_color_untracked; echo -ns $tide_git_icon_untracked$untracked)
+        set_color $tide_git_color_stash; echo -ns ' '$tide_git_icon_stash' '$stash
+        set_color $tide_git_color_conflicted; echo -ns ' '$tide_git_icon_conflicted' '$conflicted
+        set_color $tide_git_color_staged; echo -ns ' '$tide_git_icon_staged' '$staged
+        set_color $tide_git_color_dirty; echo -ns ' '$tide_git_icon_dirty' '$dirty
+        set_color $tide_git_color_untracked; echo -ns ' '$tide_git_icon_untracked' '$untracked)
 end

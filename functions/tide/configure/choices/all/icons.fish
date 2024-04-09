@@ -22,6 +22,13 @@ function _enable_icons
     set -g fake_tide_pwd_icon_home 
     set -g fake_tide_cmd_duration_icon 
     set -g fake_tide_git_icon 
+    set -g tide_git_icon_upstream_behind ⇣
+    set -g tide_git_icon_upstream_ahead ⇡
+    set -g tide_git_icon_stash '󱉰 '
+    set -g tide_git_icon_conflicted ' '
+    set -g tide_git_icon_staged ' '
+    set -g tide_git_icon_dirty ' '
+    set -g tide_git_icon_untracked '󰩌 '
 end
 
 function _disable_icons
@@ -30,4 +37,11 @@ function _disable_icons
     set fake_tide_pwd_icon_home
     set fake_tide_cmd_duration_icon
     set fake_tide_git_icon
+    set tide_git_icon_upstream_behind ⇣
+    set tide_git_icon_upstream_ahead ⇡
+    set tide_git_icon_stash *
+    set tide_git_icon_conflicted ~
+    set tide_git_icon_staged +
+    set tide_git_icon_dirty !
+    set tide_git_icon_untracked ?
 end
